@@ -1,0 +1,24 @@
+package cucumber_Learning;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+
+@CucumberOptions(
+		
+		dryRun = false,
+		monochrome = true,
+		features = {"src/test/resources"},
+		glue = {"cucumber_Learning"},
+		plugin = {"pretty","html:target/site/cucumber-html","json:target/cucumber1/json"},
+		tags = ("@Login or  @Logout")
+		
+		)
+
+
+public class Runner_JUNIT {
+
+}

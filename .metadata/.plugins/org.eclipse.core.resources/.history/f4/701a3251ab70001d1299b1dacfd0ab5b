@@ -1,0 +1,71 @@
+package cucumber_Learning;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+
+
+public class Rediff_StepDefinition {
+
+	 @Given("I Open a Chrome Browser")
+	 public void I_Open() {
+		 
+		 System.out.println("I Open a Chrome Browser");
+	 }
+	 
+	 
+	    @And("I enter the Url https://www.rediff.com in the address bar")
+	   public void I_enter_the() {
+	    	System.out.println("I enter the Url https://www.rediff.com in the address bar");
+	    }
+	    @Then("I click sign on link")
+	    public void I_click() {
+	    	System.out.println("I click sign on link");
+	    }
+	    @And("I enter RediffMail page")
+	    public void  I_enter_RediffMail() {
+	    	System.out.println("I enter RediffMail page");
+	    }
+	    
+	    @And("I Enter correct user name and password")
+	    public void I_Enter_correct() {
+	    	System.out.println("I Enter correct user name and password");
+	    }
+	    @Then("I click sign in button")
+	    public void I_click_sign()
+	    {
+	    	System.out.println("I click sign in button");
+	    }
+	    @And("I Check if I am in the Inobox Page of RediffMail")
+	    public void I_Check_if_I_am()
+	    {
+	    	System.out.println("I Check if I am in the Inobox Page of RediffMail");
+	    }
+	
+	    
+	    @Given("I am inside the inbox Page")
+	    public void I_am_inside() {
+	    	System.out.println("I am inside the inbox Page");
+	    }
+	    @And("I Validate the presence of the Logout link")
+	    public void I_Validate_the_presence() {
+	    	System.out.println("I Validate the presence of the Logout link");
+	    }
+	    @When("I click on the Logout Link") 
+	    public void I_click_on() {
+	    	System.out.println("I click on the Logout Link");
+	    }
+	    @Then("I am Logged out of RediffMail")
+	    public void I_am_Logged_out() {
+	    System.out.println("I am Logged out of RediffMail");
+	    }
+	    @And("I can Validate the presence of RediffHome link")
+	    public void I_can_Validate() {
+	    	System.out.println("I can Validate the presence of RediffHome link");
+	    }
+	    
+
+	
+}
